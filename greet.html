@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js
+    "integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=
+    "crossorigin="anonymous"></script>
+    <title>Even More</title>
+</head>
+<body>
+    
+    <h1>Even More</h1>
+     <script src="greetings.js"></script>
+    <h2>Greetings,  ¡Saludos!</h2>
+    <button onclick="myFunction()">Click Me!</button>
+    <p id="demo"></p>
+    
+    <script>
+      $('body').css({"background-color": "purple","color": "gold"})
+    </script>
+
+    <script>
+    function myFunction() {
+      var userName = prompt("What's your name?/ ¿Cómo te llamas?");
+        if (userName !=null) {
+        document.getElementById("demo").innerHTML = "Hello/¡Hola! " + userName + "! How are you?/¿Cómo estás?";
+  }
+}
+
+
+        
+      
+
+</script>
+</body>
+</html>
+
+
+

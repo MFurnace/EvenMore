@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js
+    "integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=
+    "crossorigin="anonymous"></script>
+    <title>Even More!</title>
+</head>
+<body>
+    
+    <h1>Even More</h1>
+     <script src="sum.js"></script>
+    <h2>Input number!</h2>
+    <!-- <button onclick="myFunction()">Click Me!</button>
+    <p id="demo"></p>-->
+    <h2>The computer will print the sum of numbers 1 to your chosen number</h2>
+    <input id="val"><input type="Submit" onclick="run();">
+    <p id="results"></p>
+    
+    <script>
+      $('body').css({"background-color": "purple","color": "gold"})
+    </script>
+
+    <script>
+   function numberSum(n) {
+    let total = 0;
+    for(var i = 1; i <= n; i++){
+      total += i;
+    }
+    return total;
+}
+    function run(){
+    val = document.getElementById("val").value;
+    document.getElementById("results").innerHTML=val+": "+numberSum(val)
+  } 
+
+</script>
+</body>
+</html>
+
+
+
